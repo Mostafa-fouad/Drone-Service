@@ -1,5 +1,7 @@
 .PHONY: setup
-setupAndStart:
+setup:
+	docker pull adoptopenjdk/openjdk11
+
 	docker pull postgres
 
 	docker-compose up

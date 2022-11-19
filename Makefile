@@ -16,8 +16,6 @@ start:
 unit-test:
 	mvn clean compile test
 
-	docker stop postgresdb
-
 .PHONY: integration-test
 integration-test:
 	mvn clean verify -P integration-test

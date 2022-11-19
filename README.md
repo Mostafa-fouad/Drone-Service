@@ -45,6 +45,6 @@ java version 11, because there are some dependencies/plugins have been added req
 - To switch to java 11, run the following command: 
 `export JAVA_HOME= /usr/libexec/java_home -v 11.0.15`
 
---> add ` before and after this part `/usr/libexec/java_home -v 11.0.15` ,  because it was misleading to add them in README, because this symbol is used in MarkDown language
+--> add " ` " before and after this part /usr/libexec/java_home -v 11.0.15 ,  because it was misleading to add them in README, because this symbol is used in MarkDown language
 
 - You can run the same command to switch to another java version by changing `11.0.15` to your version.

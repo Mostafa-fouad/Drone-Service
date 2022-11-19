@@ -1,0 +1,29 @@
+version: '3.6'
+
+services:
+  api:
+    image: 'drone-app'
+    container_name: drone-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgresdb
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresdb:5432/drone
+      - SPRING_DATASOURCE_USERNAME=drone-user
+      - SPRING_DATASOURCE_PASSWORD=DroneTask
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+
+  postgresdb:
+    image: postgres
+    container_name: postgresdb
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=drone
+      - POSTGRES_USER=drone-user
+      - POSTGRES_PASSWORD=DroneTask

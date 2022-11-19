@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: local
+---
+spring:
+  jackson:
+    default-property-inclusion: NON_NULL
+  flyway:
+    baselineOnMigrate: true
+    table: flyway_drone_schema_history
+  application:
+    name: drone-service
+  config:
+    activate:
+      on-profile: local
+
+---
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:postgresql://localhost:5432/drone
+    username: drone-user
+    password: DroneTask
+  config:
+    activate:
+      on-profile: local
+---
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:postgresql://postgresdb:5432/drone
+    username: drone-user
+    password: DroneTask
+  config:
+    activate:
+      on-profile: docker
+
+scheduled-tasks:
+ check-battery-task_rate: 20000 # every 20 sec

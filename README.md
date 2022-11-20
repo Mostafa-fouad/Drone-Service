@@ -25,7 +25,7 @@ This service is created to control all tasks can be done by drone, these tasks i
 ### Steps:
 
  - Clone the project and open the terminal at the project directory.
- - Using the advantage of the **Make File** I have added to run the commands needed to build and run the service.
+ - Using the advantage of the **Make File** I have added to run the commands needed to build and boot-up the service.
 
 1- Firstly, run the following command to set up the environment and run the service
  `make setup`

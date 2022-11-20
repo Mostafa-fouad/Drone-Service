@@ -3,9 +3,18 @@
 This service is created to control all tasks can be done by drone, these tasks include:
  
 - Register a drone in the drone fleet.
+- Edit registered drone.
+- Unregister drone from the fleet.
+- Get all registered drones.
+- Get only IDLE drones to load them with medication items. 
 - Load medication items on the drone.
 - Deliver the loaded medication items to provided address.
 - Return it back to fleet to be ready to the next trip.
+- Check drones' battery levels.
+- Check the audit of all drones' battery levels.
+- Register new medication item.
+- Edit registered medication item.
+- Unregister medication item.
 
 ## How to bootup the service
 

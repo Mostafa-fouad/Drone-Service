@@ -48,8 +48,8 @@ and now you can head to the **_swagger_** page I have added to play with the ser
 `make integration-test`
 
 ### Note: 
- - In case you encountered any problems running tests, make sure that your terminal pointing to 
-java version 11, because there are some dependencies/plugins have been added require java version 11 to work fine.
+ - In case you encountered any problems while running the tests, make sure that your terminal pointing to 
+java version 11, because there are some dependencies/plugins have been added that requires java version 11 to work fine.
 
 - To switch to java 11, run the following command: 
 `export JAVA_HOME= /usr/libexec/java_home -v 11.0.15`

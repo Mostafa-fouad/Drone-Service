@@ -36,6 +36,8 @@ and now you can head to the **_swagger_** page I have added to play with the ser
 
 3- At swagger, all the added endpoints are documented to know the required request parameters and the expected response.
 
+4- Later, when you want to start the service, just type the following make command `make start`
+
 
 ## How to run tests
 
